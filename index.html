@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nav bar Desktop first-->
+    <header>
+      <nav class="navbar inner-layout">
+        <!-- tại sao bỏ inner layout vào trong nav rồi mà nó không affect lên? -->
+        <div class="logo">
+          <img
+            src="https://rocketman.learnwagtail.com/static/images/logo.24c25970fb09.png"
+          />
+        </div>
+
+        <div class="mobile-header">
+          <div class="logo-mobile">
+            <img
+              src="https://rocketman.learnwagtail.com/static/images/logo.24c25970fb09.png"
+            />
+          </div>
+          <button class="hamburger">hamburger</button>
+          <div>
+            <ul class="nav-links-block-mobile">
+              <li>
+                <a
+                  href="https://www.google.com"
+                  class="nav-links-mobile"
+                  id="service"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com"
+                  class="nav-links-mobile"
+                  id="contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com"
+                  class="nav-links-mobile"
+                  id="wagtail"
+                  >Wagtail Course</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <ul class="nav-links-block-desktop">
+            <li>
+              <a
+                href="https://www.google.com"
+                class="nav-links-desktop"
+                id="service"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.com"
+                class="nav-links-desktop"
+                id="contact"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.com"
+                class="nav-links-desktop"
+                id="wagtail"
+                >Wagtail Course</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <div class="hero-section">
+      <!-- cho image vao trong the div container luon -->
+
+      <!-- Today I will build hero session -->
+      <!-- TODO: Background image CSS -->
+      <!-- TODO: Search cach dat ten bem method cho Html -->
+      <div class="hero-text-container inner-layout">
+        <h1 class="hero-text">Supreme Rocket Maintenance</h1>
+        <p class="hero-intro">
+          Your rocket is your $1,000,000,000 baby. We get that.
+        </p>
+        <button class="btn btn-hero" onclick="show_contact()" id="btn-contact">
+          Contact us
+        </button>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <!-- Row Title -->
+      <div class="row-title">
+        <p>Your rocket is valuable. Let the professionals work on it.</p>
+      </div>
+
+      <!-- TWO COLUMNS -->
+      <div class="two-columns">
+        <div class="two-columns-container inner-layout">
+          <div class="column">
+            <div class="first-img">
+              <img
+                src="https://rocketman.learnwagtail.com/media/images/hello-i-m-nik-8yCmQODY2SY-unsplash.2e16d0ba.fill-570x370.jpg"
+                alt=""
+                id="first-img"
+              />
+            </div>
+            <div class="card-content-box">
+              <h1 class="card-title">It's not a toy</h1>
+              <p class="card-content">
+                Or maybe you're Jeff Bezos, and rockets are your toys!
+              </p>
+              <button class="card-btn">View services</button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="second-img">
+              <img
+                src="https://rocketman.learnwagtail.com/media/images/nasa-n463SoeSiVY-unsplash.2e16d0ba.fill-570x370.jpg"
+                alt=""
+                id="second-img"
+              />
+            </div>
+            <div class="card-content-box">
+              <h1 class="card-title">Rockets are cool!</h1>
+              <p class="card-content">
+                Especially when you are see photos like this one
+              </p>
+              <button class="card-btn">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- THREE PICTURES -->
+      <div class="three-pictures inner-layout">
+        <div class="big-container "> 
+          <!-- col-10 -->
+          
+          <div class="rowbox" id="top">
+            <div class="rowbox-img">
+              <img
+                src="https://rocketman.learnwagtail.com/media/images/spacex-MEW1f-yu2KI-unsplash.2e16d0ba.fill-786x552.jpg"
+                alt=""
+              />
+            </div>
+          
+              <div class="rowbox-content">
+                <h2>
+                  Self Landing Rocket
+                </h2>
+                <p>
+                  Probably the coolest thing evar!! We can program this for you
+                </p>
+                <button class="btn btn-hero">More details</button>
+              </div>
+          
+          </div>
+
+          <div class="rowbox" id="mid">
+            <div class="rowbox-img">
+              <img
+                src="https://rocketman.learnwagtail.com/media/images/pablo-guerrero-pGXUwHZQ5eI-unsplas.2e16d0ba.fill-786x552.jpg"
+                alt=""
+              />
+            </div>
+            
+          
+              <div class="rowbox-content">
+                <h2>We'll clean your rocket</h2>
+                <p>
+                  This image has nothing to do with cleaning. But it's kind of
+                  neat still.
+                </p>
+                <button class="btn btn-hero">More details</button>
+              </div>
+          </div>
+
+          <div class="rowbox" id="bot">
+            <div class="rowbox-img">
+              <img
+                src="https://rocketman.learnwagtail.com/media/images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-786x552.jpg"
+                alt=""
+              />
+            </div>
+          
+          
+              <div class="rowbox-content">
+                <h2>Rockets are gas guzzlers</h2>
+                <p>
+                  If you think gas is expensive now.. think about rocket prices!
+                  Luckily, we water our gas down to give you more bang for your
+                  buck.
+                </p>
+                <button class="btn btn-hero">More details</button>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <div class="row-title">
+          <p id="partnerContact">
+            We've also partnered with Skynet to maintain humanoid robotics.
+          </p>
+          <button class="btn btn-pink">
+            Contact us
+          </button>
+      </div>
+    </main>
+
+    <!-- QUOTE -->
+
+    <div class="quote inner-layout">
+      <p>
+        Our rockets were so clean they blinded over 1,000 people when they
+        watched our launch. Thanks Rocketman!
+      </p>
+      <p>— TOTALLY NOT SPACEX 😉</p>
+    </div>
+
+    <!-- PINK PART -->
+
+    <div class="pink-part inner-layout">
+      <div class="pink-part-contentbox">
+        <h2>We’ll take good care of your rocket.</h2>
+        <p>
+          We’ll treat your rocket as if it’s our own. Our standards are higher
+          than the ISS's altitude. We also enjoy test driving your rocket before
+          giving it back 😱
+        </p>
+      </div>
+      <button class="btn">Contact us</button>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer inner-layout">
+      <div class="footer-column" id="links">
+        <div class="footer-column-title">Links</div>
+        <div class="btn-list">
+          <ul>
+            <a href="#">Services</a>
+          </ul>
+          <ul>
+            <a href="#">Contact</a>
+          </ul>
+          <ul>
+            <a href="#">Wagtail Course</a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-column" id="contactus">
+        <div class="footer-column-title">Contact Us</div>
+        <div id="contactinfo">
+          <div>Contact us anytime at gary@totallyfakeemail.com</div>
+          <li>All images from unsplash.com</li>
+        </div>
+      </div>
+
+      <div class="footer-column" id="hours">
+        <div class="footer-column-title">Hours</div>
+        <div id="hours">
+          <div>Monday - Friday</div>
+          <div>9am - 5am</div>
+        </div>
+      </div>
+      <div class="footer-column" id="contacticon">
+        <div class="footer-column-title">icons</div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

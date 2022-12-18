@@ -1,0 +1,716 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  /* TODO: Tất cả element đều là dạng box trong CSS
+   Khi mà mình style 1 box bên nav bar,  */
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CSS body */
+
+body {
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, N;
+}
+
+/* Wrapper */
+
+/* Search google: Utility class */
+.inner-layout {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.mobile-header {
+  display: none;
+}
+
+/* Nav bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  /* border: 1px solid #000; */
+  padding-top: 37px;
+  padding-bottom: 37px;
+  border-bottom: 1px solid #e2e2e2;
+  justify-content: space-between;
+  align-items: center;
+  /* */
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.nav-links-block-mobile {
+  display: none;
+  /* flex-direction: row;
+  padding-right: 0;
+  font-size: 20px;
+  color: color: rgba(0,0,0,.9);
+  font-weight: 300;
+  letter-spacing: 1.59px;
+  margin-left: px;
+  margin-right: 0; */
+}
+
+.nav-links-mobile {
+  display: none;
+  /* align-items: center;
+  text-align: center; */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+  letter-spacing: 1.59px;
+  border-color: #000;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+#service {
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#contact {
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#wagtail {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+.nav-links-block-desktop {
+  display: flex;
+  flex-direction: row;
+  padding-right: 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+  letter-spacing: 1.59px;
+}
+
+.nav-links-desktop:hover {
+  color: grey;
+}
+
+.nav-links-desktop {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+
+/* .wagtail-course {
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: right;
+  justify-content: right;
+}
+
+.service {
+  margin-top: 20px;
+  text-decoration: none;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact {
+  margin-top: 20px;
+  text-decoration: none;
+  margin: 20px;
+  padding: 20px;
+} */
+
+/* HERO SECTION */
+
+.hero-section {
+  height: 100vh;
+  /* 100vh la hinh vua van so voi man hinh */
+  background: linear-gradient(
+      180.43deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://rocketman.learnwagtail.com/media/images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg");
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* border: solid 1px red; */
+}
+
+.hero-text-container {
+  position: relative;
+  color: white;
+  text-align: left;
+  top: 25%;
+  /* border: solid 1px blue; */
+}
+
+.hero-text {
+  /* position: absolute; */
+  font-size: 64px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border: solid #fff; */
+  /* top: 50px; */
+  display: inline-block;
+  height: inherit;
+  width: 500px;
+}
+
+.hero-intro {
+  font-size: 1.875rem;
+  font-weight: 300;
+  /* position: absolute; */
+  /* top: 70%; */
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, N;
+  line-height: 2;
+  font-weight: 500;
+  height: auto;
+  width: auto;
+  text-transform: uppercase;
+  vertical-align: center;
+  letter-spacing: 1.75px;
+  padding: 8px 32px;
+}
+
+.btn-hero {
+  padding: 0.5rem 2rem;
+  font-size: 1.125rem;
+  line-height: 2;
+  border-radius: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.two-columns {
+  /* position: fixed; */
+  width: 100%;
+  margin: 20px auto;
+  /* justify-content: space-evenly; */
+  /* flex-direction: row; */
+  height:auto;
+  /* border: solid 1px blue; */
+}
+
+.two-columns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  height: auto;
+  text-align: center;
+  /* padding-right: 200px;
+  padding-left: 200px; */
+  /* nếu để 2 cái padding ở đây thì nó sẽ bị lệch */
+  /* border: solid 1px red; */
+}
+
+.column {
+  /* border: solid 1px rgb(194, 188, 188); */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .first-img, .second-img {
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  color: #fff;
+  height: auto;
+  max-width: 100%;
+} */
+
+#first-img,
+#second-img {
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  align-items: center;
+  color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+.card-content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border: solid 1px rgb(194, 188, 188);
+  height: 300px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 1.25rem;
+  font-size: 23px;
+  line-height: 1.21;
+  color: #212b36;
+}
+
+.card-content {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #000;
+  display: inline-block;
+}
+
+.card-btn {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.89px;
+  text-align: center;
+  color: #814ebf;
+  text-transform: uppercase;
+  background-color: white;
+  font-family: proxima-nova, sans-serif;
+  border: none;
+  display: flex;
+  place-content: center;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.three-pictures {
+  margin-top: 10px;
+  padding-top: 30px;
+  display: block;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.rowbox {
+  position: relative;
+  /* border: solid 1px blue; */
+  max-height: 800px;
+  /* border: solid 1px green; */
+}
+
+.rowbox-img {
+  color: #fff;
+  height: auto;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.rowbox-content {
+  position: relative;
+  padding: 50px;
+  width: 500px;
+  height: auto;
+  bottom: 200px;
+  background-image: url(https://rocketman.learnwagtail.com/static/images/grey-pattern.b4f896f3f272.png);
+}
+
+.rowbox-content > h2 {
+  font-weight: 800;
+  font-family: proxima-nova, sans-serif;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.rowbox-content > p {
+  color: #fff;
+  font-family: proxima-nova, sans-serif;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.43;
+  font-style: normal;
+}
+
+#top .rowbox-img {
+  margin-left: 0px;
+}
+
+#mid .rowbox-img {
+  margin-right: 0px;
+}
+
+#mid .rowbox-img > img {
+  width: 800px;
+}
+
+#bot .rowbox-img {
+  margin-left: 0px;
+}
+
+#top .rowbox-content {
+  float: right;
+  right: 5%;
+}
+
+#mid .rowbox-content {
+  float: left;
+  left: 5%;
+}
+
+#bot .rowbox-content {
+  float: right;
+  right: 5%;
+}
+
+.row-title {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 30px;
+  color: #000;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.33;
+  text-align: center;
+  /* border: solid #000; */
+}
+.quote {
+  padding-top: 80px;
+}
+
+.quote :nth-child(1) {
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.37;
+  color: #212b36;
+  font-family: proxima-nova, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.quote :nth-child(2) {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.75px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-style: normal;
+  margin-bottom: 150px;
+}
+
+.pink-part {
+  background-color: #814ebf;
+  background-image: url(https://rocketman.learnwagtail.com/static/images/contact-overlay.3bbaddf71379.png);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  column-gap: 100px;
+  align-items: center;
+}
+
+.btn-pink {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #814ebf;
+  border-color: #814ebf;
+  color: white;
+  padding: 8px 48px;
+}
+
+.btn-pink > a {
+  color: #fff;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, N;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.pink-part .pink-part-contentbox > h2 {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.pink-part .pink-part-contentbox > p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #fff;
+}
+
+/* .btn-try {
+  width: auto;
+  height: auto;
+  display: flex;
+} */
+
+.footer {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  column-gap: 100px;
+}
+
+.btn-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-column-title {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: #858585;
+  margin-bottom: 13px;
+}
+
+.btn-list > ul > a {
+  text-decoration: none;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+
+#contactinfo {
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  display: inline-flexbox;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* TODO: how to make the content box doesn't affect other position */
+
+#hours {
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  display: inline-flexbox;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links > li {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    display: none;
+  }
+
+  .inner-layout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-links-block-desktop {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: right;
+    margin-left: 40vw;
+    margin-right: 0px;
+  }
+
+  .hero-text {
+    font-size: 10vw;
+  }
+
+  .hero-intro {
+    font-size: 5vw;
+  }
+
+  .row-title {
+    font-size: 4vw;
+  }
+
+  .two-columns-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rowbox-content {
+    width: 100vw;
+    align-items: center;
+  }
+
+  #top .rowbox-content {
+    float:none;
+  }
+  
+  #mid .rowbox-content {
+    float: none;
+    left: 0%;
+  }
+  
+  #bot .rowbox-content {
+    float: none;
+  }
+
+ body {
+    background-color: green ;
+  }
+
+  .rowbox-img {
+    color: #fff;
+    /* height: auto;
+    width: 200px; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  }
+  
+
+
+
